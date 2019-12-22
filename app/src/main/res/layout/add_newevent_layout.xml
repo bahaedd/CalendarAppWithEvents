@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/holo_blue_dark">
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@android:color/white"
+        android:hint="Type Event"
+        android:id="@+id/eventname"
+        android:inputType="textShortMessage"
+        android:layout_margin="20dp"
+        android:gravity="center"></EditText>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <ImageButton
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@mipmap/time"
+            android:layout_margin="10dp"
+            android:id="@+id/seteventtime"
+            android:contentDescription="TODO"
+            tools:ignore="ContentDescription,HardcodeText"
+            android:layout_weight="1"
+            >
+
+        </ImageButton>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="00:00 AM"
+            android:gravity="center"
+            android:textSize="30sp"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:id="@+id/eventtime"
+            android:layout_margin="10dp"
+            tools:ignore="HrdcodedText"
+            android:layout_weight="2"
+            >
+
+        </TextView>
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Alarm Me"
+            android:textColor="@android:color/white"
+            android:buttonTint="@android:color/white"
+            android:id="@+id/alarmme"
+            android:layout_weight="1"
+            ></CheckBox>
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add Event"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:textAllCaps="false"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        android:background="@android:color/white"
+        android:id="@+id/addevent"></Button>
+
+</LinearLayout>
